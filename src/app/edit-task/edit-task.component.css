@@ -1,0 +1,20 @@
+#doneButton {
+  background-color: orange;
+  border-radius: 25px;
+  width: 100px;
+  border: solid 2px white;
+  font-size: 18px;
+  color: white;
+  margin: 15px;
+}
+
+#doneButton:hover {
+  background-color: lightyellow;
+  color: gray;
+}
+
+.taskDescription {
+  border-radius: 5px;
+  width: 50%;
+  height: 30px;
+}

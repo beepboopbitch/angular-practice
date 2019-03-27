@@ -1,0 +1,22 @@
+#taskListButton {
+  background-color: orange;
+  border-radius: 25px;
+  width: 100px;
+  border: solid 2px white;
+  font-size: 18px;
+  color: white;
+  margin: 15px;
+}
+
+#taskListButton:hover {
+  background-color: lightyellow;
+  color: gray;
+}
+
+ul {
+  font-size: 18px;
+  border: solid white 2px;
+}
+li {
+
+}
