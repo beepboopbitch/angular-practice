@@ -2,6 +2,20 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
+
+## Specs:
+* "As a user, I want to see a list of tasks."
+* "As a user, I want to edit individual tasks."
+* "As a user, I want to add new tasks to the list."
+
+## Components:
+
+* TaskListComponent: List all Tasks.
+* EditTaskComponent: Manage editing and updating Tasks, including hiding and showing the edit form.
+* NewTaskComponent: Add functionality that will allow us to add new Tasks directly through our application.
+
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

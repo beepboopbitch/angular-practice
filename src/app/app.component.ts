@@ -13,14 +13,14 @@ export class AppComponent {
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
-
-  finishedEditing() {
-   this.selectedTask = null;
- }
+  selectedTask = null;
 
   editTask(clickedTask) {
-      this.selectedTask = clickedTask;
-    }
+    this.selectedTask = clickedTask;
+  }
+  finishedEditing() {
+    this.selectedTask = null;
+  }
 
   tasks: Task[] = [
     new Task('Finish weekend Angular homework for Epicodus courses', 3),
