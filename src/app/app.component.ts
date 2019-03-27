@@ -7,15 +7,20 @@ import { Task } from './models/task.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   currentFocus: string = 'Angular Homework';
   currentTime = new Date();
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
   year: number = this.currentTime.getFullYear();
 
-  // editTask() {
-  //   alert ("Time to edit this task");
-  // }
+  finishedEditing() {
+   this.selectedTask = null;
+ }
+
+  editTask(clickedTask) {
+      this.selectedTask = clickedTask;
+    }
 
   tasks: Task[] = [
     new Task('Finish weekend Angular homework for Epicodus courses', 3),
