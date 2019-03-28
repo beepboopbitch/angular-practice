@@ -7,13 +7,19 @@ import { Task } from '../models/task.model';
   styleUrls: ['./task-list.component.css']
 })
 
-  export class TaskListComponent {
-    @Input() childTaskList: Task[];
-    @Output() clickSender = new EventEmitter();
-    editButtonClicked(taskToEdit: Task) {
-      this.clickSender.emit(taskToEdit);
-    }
-
+export class TaskListComponent {
+  @Input() childTaskList: Task[];
+  @Output() clickSender = new EventEmitter();
+  editButtonClicked(taskToEdit: Task) {
+    this.clickSender.emit(taskToEdit);
+  }
+  filterByCompleteness: string = "incompleteTasks";
+  onChange(optionFromMenu) {
+    this.filterByCompleteness = optionFromMenu;
+  }
+  toggleDone(clickedTask: Task, setCompleteness: boolean) {
+   clickedTask.done = setCompleteness;
+  }
 
   priorityColor(currentTask){
     if (currentTask.priority === 3){

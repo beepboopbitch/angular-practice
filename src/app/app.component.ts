@@ -14,11 +14,7 @@ export class AppComponent {
   year: number = this.currentTime.getFullYear();
   selectedTask = null;
 
-  masterTaskList: Task[] = [
-    new Task('Finish weekend Angular homework for Epicodus course', 3),
-    new Task('Begin brainstorming possible JavaScript group projects', 2),
-    new Task('Add README file to last few Angular repos on GitHub', 2)
-  ];
+  masterTaskList: Task[] = [];
 
   editTask(clickedTask) {
     this.selectedTask = clickedTask;
@@ -28,4 +24,7 @@ export class AppComponent {
     this.selectedTask = null;
   }
 
+  addTask(newTask: Task) {
+    this.masterTaskList.push(newTask);
+  }
 }
