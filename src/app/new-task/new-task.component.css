@@ -1,0 +1,15 @@
+button {
+  background-color: orange;
+  border-radius: 25px;
+  width: 100px;
+  border: solid 2px white;
+  font-size: 18px;
+  color: white;
+  margin: 15px;
+}
+
+
+button:hover {
+  background-color: lightyellow;
+  color: gray;
+}

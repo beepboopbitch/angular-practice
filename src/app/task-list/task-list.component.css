@@ -1,4 +1,14 @@
-#taskListButton {
+
+
+ul {
+  font-size: 18px;
+  border: solid white 2px;
+}
+li {
+
+}
+
+button {
   background-color: orange;
   border-radius: 25px;
   width: 100px;
@@ -8,15 +18,19 @@
   margin: 15px;
 }
 
-#taskListButton:hover {
+
+button:hover {
   background-color: lightyellow;
   color: gray;
 }
 
-ul {
-  font-size: 18px;
-  border: solid white 2px;
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
-li {
 
+.block {
+  margin: 10px
 }
